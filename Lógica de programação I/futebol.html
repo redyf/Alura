@@ -18,6 +18,7 @@
 
     var vitorias = parseInt(prompt("Entre com o número de vitórias."));
     
+    //parseInt é uma função do Java Script que é usada para converter string "texto" em número
     
     var empates = parseInt(prompt("Entre com o número de empates."));
     
@@ -25,7 +26,17 @@
 
     mostra("Os pontos do seu time é " + pontos);
 
-//parseInt é uma função do Java Script que é usada para converter string "texto" em número
+    if (pontos > 28) {
+        mostra("Seu time está melhor do que o do ano passado.");
+    }
+    if (pontos < 28) {
+        mostra("Seu time está pior que o ano passado.");
+    }
+    if (pontos == 28) { 
+        mostra("Seu time esta igual ao ano passado.");
+    }
+
+    mostra("FIM");
 //o peso / altura seriam os valores x e y
 
 
