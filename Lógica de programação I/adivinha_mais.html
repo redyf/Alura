@@ -1,35 +1,29 @@
 <meta charset="UTF-8">
 
+<input/>
+<button>Compare com o meu segredo</button>
+
 <script>
 
-    function pulaLinha() {
+    var segredo = 5;
 
-        document.write("<br>");
+    var input = document.querySelector("input");
 
-    }
+    function verifica() {
+        
+        if(input.value == segredo) {
 
-    function mostra(frase) {
-
-        document.write(frase);
-        pulaLinha();
-    }
-
-    for(var linha = 1; linha <= 3; linha++) {
-
-        for(var coluna = 1; coluna <= 10; coluna++) {
-
-            document.write("*");
+            alert("Você acertou!");
+        } else{
+            alert("Você errou!");
         }
-
-        pulaLinha();
     }
 
+    var button = document.querySelector("button");
 
-
-
-
-// o sinal = indica atribuição, já o sinal == indica igual
+    button.onclick = verifica;
 
 </script>
 
 <!--String é tipo texto e sem "" é um número-->
+<!--  o sinal = indica atribuição, já o sinal == indica igual-->
