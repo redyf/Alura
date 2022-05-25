@@ -5,22 +5,32 @@
 
 <script>
 
-    var segredo = 5;
+    var segredos = [5,7,10,2,3];
 
     var input = document.querySelector("input");
-    input.focus();
+        input.focus();
 
     function verifica() {
 
-        if(input.value == segredo) {
+    var achou = false;
 
-            alert("Você acertou!");
-        } else{
-            alert("Você errou!");
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+        if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU!");
+            achou = true;
+            break;
         }
+    }
 
-        input.value = "";
-        input.focus();
+    if(achou == false) {
+        alert("Você ERROU!");
+    }
+
+    input.value = "";
+    input.focus();
+
     }
 
     var button = document.querySelector("button");
@@ -28,6 +38,5 @@
     button.onclick = verifica;
 
 </script>
-
 <!--String é tipo texto e sem "" é um número-->
 <!--  o sinal = indica atribuição, já o sinal == indica igual-->
