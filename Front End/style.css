@@ -1,12 +1,10 @@
-body {
-
-}
+body {}
 
 #banner {
     width: 100%;
 }
 
-.principal{
+.principal {
     background: #CCCCCC;
     padding: 30px;
 }
@@ -25,6 +23,7 @@ p {
 
 #missao {
     font-size: 20px"
+
 }
 
 em strong {
@@ -48,7 +47,6 @@ ul {
     margin-right: 15%;
 }
 
-.imagembeneficios{
+.imagembeneficios {
     width: 50%;
 }
-
