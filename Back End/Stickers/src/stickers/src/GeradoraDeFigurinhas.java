@@ -25,12 +25,12 @@ public class GeradoraDeFigurinhas {
         //escrever uma frase na nova imagem
 
         // escrever a imagem em um arquivo
-        ImageIO.write(novaImagem, "png", new File("saida/figurinha.png"));
+        ImageIO.write(novaImagem, "png", new File("saida/filme.png"));
 
     }
 
     public static void main(String[] args) throws Exception {
-        var geradora = new GeradoraDeFigurinhas();
-        geradora.cria();
+       var geradora = new GeradoraDeFigurinhas();
+       geradora.cria();
     }
 }
