@@ -25,7 +25,7 @@ public class GeradoraDeFigurinhas {
         //escrever uma frase na nova imagem
 
         // escrever a imagem em um arquivo
-        ImageIO.write(novaImagem, "png", new File("saida/filme.png"));
+        ImageIO.write(novaImagem, "png", new File("saida/figurinha.png"));
 
     }
 
