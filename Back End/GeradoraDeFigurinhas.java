@@ -4,11 +4,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
-
 import javax.imageio.ImageIO;
-
 public class GeradoraDeFigurinhas {
-
 
     public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
 
