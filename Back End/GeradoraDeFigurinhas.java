@@ -10,7 +10,7 @@ public class GeradoraDeFigurinhas {
     public void cria() throws Exception {
 
         // leitura da imagem
-        BufferedImage imagemOriginal = ImageIO.read(new File("entrada/filme.jpg"));
+        BufferedImage imagemOriginal = ImageIO.read(new File("entrada/filme-maior.jpg"));
 
         // cria uma imagem em memória com transparência e com tamanho novo
         int largura = imagemOriginal.getWidth();
